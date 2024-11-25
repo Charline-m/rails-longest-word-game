@@ -1,0 +1,15 @@
+<h1 class="p-10">New Game</h1>
+<ul class="list-group list-group-horizontal">
+<% @letters.each do |letter| %>
+ <li class= "carre"><%= letter %></li>
+<% end %>
+</ul>
+
+<p class="mb-1 p-3">What is the longest word you can find ?</p>
+
+<form action="/score" data-turbo="false" method="post">
+  <div class="input-group mb-3 px-3" style= "max-width: 400px">
+    <input type="text" class="form-control" name="new" value="<%= params[:new]%>" aria-describedby="button-addon2">
+    <input class="btn btn-primary" type="submit" value="Play">
+  </div>
+</form>

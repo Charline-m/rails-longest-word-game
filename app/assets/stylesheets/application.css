@@ -1,3 +1,15 @@
+.carre {
+  list-style: none;
+  display: inline-block ;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  width: 50px; /* Largeur du carré */
+  height: 50px; /* Hauteur du carré */
+  background-color: blue; /* Couleur de fond bleu */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre portée */
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
